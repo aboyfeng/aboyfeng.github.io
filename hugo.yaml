@@ -1,0 +1,137 @@
+# ---------------------------------------------------------------------------
+# Ycf's Blog — Hugo + PaperMod
+# Docs: https://github.com/adityatelange/hugo-PaperMod/wiki
+# ---------------------------------------------------------------------------
+
+baseURL: "https://aboyfeng.github.io/"
+title: "Ycf's Blog"
+theme: "PaperMod"
+
+locale: "en-us"
+defaultContentLanguage: "en"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+pagination:
+  pagerSize: 6
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  section:
+    - HTML
+    - RSS
+  taxonomy:
+    - HTML
+    - RSS
+
+module:
+  hugoVersion:
+    min: "0.146.0"
+    extended: true
+
+taxonomies:
+  tag: tags
+  category: categories
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    guessSyntax: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+
+sitemap:
+  changefreq: weekly
+  priority: 0.5
+
+menus:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 40
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 50
+
+params:
+  env: production
+  description: "Notes, experiments and things I build."
+  author: "ycf"
+
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  # Home page intro
+  homeInfoParams:
+    Title: "Hi, I'm ycf 👋"
+    Content: >
+      A place for notes on software, systems and the occasional experiment.
+      New posts land here whenever something is worth writing down.
+
+  # Site icons (files live in static/)
+  assets:
+    favicon: "favicon.ico"
+    favicon16x16: "favicon-16x16.png"
+    favicon32x32: "favicon-32x32.png"
+    apple_touch_icon: "apple-touch-icon.png"
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/aboyfeng"
+    - name: rss
+      url: "index.xml"
+
+  # Client-side search (Fuse.js) — needs the JSON output above
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10
+    keys:
+      - title
+      - permalink
+      - summary
+      - content
