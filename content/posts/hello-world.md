@@ -1,29 +1,24 @@
 ---
-title: "Hello, world"
+title: "你好，世界"
 date: 2026-11-09T09:30:00+08:00
 draft: false
 author: "ycf"
-summary: "First post — why this blog exists and what to expect from it."
-description: "A short introduction to this blog: what it is, who writes it and what will show up here."
-tags: ["meta"]
-categories: ["Blog"]
+summary: "第一篇文章：这个博客为什么存在，以及这里会出现什么内容。"
+description: "一篇简短的自我介绍：这个博客是什么、由谁来写、会写些什么。"
+tags: ["随笔"]
+categories: ["博客"]
 ---
 
-Welcome. This is the first post on the site, mostly so that the home page has
-something to show and so the templates can be sanity-checked end to end.
+欢迎。这是本站的第一篇文章，主要是让首页看起来不那么空，顺便把整套模板从头到尾走一遍。
 
-## What this is
+## 这是什么
 
-A personal notebook. Posts will be short, concrete and written for my future
-self first — notes on software, systems, tools and whatever else seemed worth
-writing down at the time.
+一个私人笔记本。文章会尽量短、尽量具体，首先是写给我未来的自己看的——关于软件、系统、工具，以及其他当时觉得值得记下来的东西。
 
-## What to expect
+## 会写什么
 
-- Mostly technical notes, occasionally something else.
-- No schedule. Posts appear when there is something to say.
-- Everything is plain Markdown, versioned in git, published from a GitHub
-  Actions workflow.
+- 以技术笔记为主，偶尔也写点别的。
+- 没有固定更新节奏，有话可说的时候才会发文。
+- 全部用纯 Markdown 写成，交给 git 管理版本，由 GitHub Actions 自动发布。
 
-If you are reading this on [aboyfeng.github.io](https://aboyfeng.github.io/),
-the pipeline is working.
+如果你是在 [aboyfeng.github.io](https://aboyfeng.github.io/) 上读到这篇的，说明发布流水线工作正常。

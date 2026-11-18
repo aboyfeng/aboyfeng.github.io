@@ -1,6 +1,6 @@
 ---
-title: "Archives"
+title: "归档"
 layout: "archives"
 url: "/archives/"
-summary: "All posts by year."
+summary: "按年份浏览全部文章。"
 ---

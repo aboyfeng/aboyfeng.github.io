@@ -1,13 +1,13 @@
 # aboyfeng.github.io
 
-Personal blog — [Hugo](https://gohugo.io/) + [PaperMod](https://github.com/adityatelange/hugo-PaperMod),
-published to GitHub Pages by GitHub Actions.
+个人博客 —— [Hugo](https://gohugo.io/) + [PaperMod](https://github.com/adityatelange/hugo-PaperMod)，
+由 GitHub Actions 发布到 GitHub Pages。
 
-Live at **https://aboyfeng.github.io**
+线上地址：**https://aboyfeng.github.io**
 
-## Local development
+## 本地开发
 
-Requires Hugo extended (>= 0.146) and git.
+需要安装 Hugo extended（>= 0.146）和 git。
 
 ```bash
 git clone --recurse-submodules https://github.com/aboyfeng/aboyfeng.github.io.git
@@ -15,37 +15,39 @@ cd aboyfeng.github.io
 hugo server -D          # http://localhost:1313
 ```
 
-If you cloned without `--recurse-submodules`:
+如果 clone 时没加 `--recurse-submodules`：
 
 ```bash
 git submodule update --init --recursive
 ```
 
-## Writing
+## 写文章
 
 ```bash
 hugo new content posts/my-new-post.md
 ```
 
-Front matter fields used by PaperMod: `title`, `date`, `draft`, `author`,
-`summary`, `description`, `tags`, `categories`, `showToc`, `cover`.
+PaperMod 会读取的 front matter 字段：`title`、`date`、`draft`、`author`、
+`summary`、`description`、`tags`、`categories`、`showToc`、`cover`。
 
-## Publishing
+## 发布
 
-Push to `main`. The workflow in `.github/workflows/hugo.yaml` builds the site
-with the pinned Hugo version and deploys `public/` to GitHub Pages.
+推送到 `main` 分支即可。`.github/workflows/hugo.yaml` 里的流水线会用固定版本的 Hugo
+构建站点，并把 `public/` 部署到 GitHub Pages。
 
-Pages is configured to deploy from **GitHub Actions** (Settings → Pages →
-Build and deployment → Source: GitHub Actions).
+Pages 的发布源设置为 **GitHub Actions**（Settings → Pages → Build and deployment →
+Source: GitHub Actions）。
 
-## Layout
+## 目录结构
 
 ```
 content/
-  posts/            # blog posts
-  about.md          # /about/
-  archives.md       # /archives/ (PaperMod layout)
-  search.md         # /search/   (Fuse.js client-side search)
-hugo.yaml           # site config
+  posts/            # 博客文章
+  about.md          # /about/ 关于
+  archives.md       # /archives/ 归档（PaperMod 布局）
+  search.md         # /search/ 站内搜索（Fuse.js）
+  404.md            # 404 页面标题
+hugo.yaml           # 站点配置
+layouts/            # 少量主题覆盖（中文页脚）
 themes/PaperMod     # git submodule
 ```

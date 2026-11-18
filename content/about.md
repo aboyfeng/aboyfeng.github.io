@@ -1,24 +1,21 @@
 ---
-title: "About"
+title: "关于"
 date: 2026-11-09T10:00:00+08:00
 draft: false
 author: "ycf"
-summary: "About this blog and the person behind it."
+summary: "关于这个博客，以及写博客的人。"
 ---
 
-Hi, I'm **ycf**. This is my personal blog — a place to keep notes on software,
-systems, tools, and the occasional side project.
+你好，我是 **ycf**。这是我的个人博客，用来记录软件、系统、工具方面的一些笔记，偶尔也写点别的东西。
 
-I write here to think more clearly and to keep a record of what I learn. If a
-post saves someone else an afternoon, even better.
+我写东西，是为了想得更清楚，也给学到的东西留个存档。如果某篇文章能帮别人省下一个下午，那就更好了。
 
-## Elsewhere
+## 其他位置
 
-- GitHub: [@aboyfeng](https://github.com/aboyfeng)
-- RSS: [subscribe](/index.xml)
+- GitHub：[@aboyfeng](https://github.com/aboyfeng)
+- RSS：[订阅](/index.xml)
 
-## Colophon
+## 关于本站
 
-Built with [Hugo](https://gohugo.io/) and the
-[PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme, hosted on
-GitHub Pages. The source is on GitHub — issues and pull requests are welcome.
+用 [Hugo](https://gohugo.io/) 和 [PaperMod](https://github.com/adityatelange/hugo-PaperMod)
+主题搭建，托管在 GitHub Pages 上。源码也在 GitHub，欢迎提 issue 或 PR。

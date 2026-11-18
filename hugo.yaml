@@ -1,14 +1,15 @@
 # ---------------------------------------------------------------------------
-# Ycf's Blog — Hugo + PaperMod
+# Ycf 的博客 — Hugo + PaperMod
 # Docs: https://github.com/adityatelange/hugo-PaperMod/wiki
 # ---------------------------------------------------------------------------
 
 baseURL: "https://aboyfeng.github.io/"
-title: "Ycf's Blog"
+title: "Ycf 的博客"
 theme: "PaperMod"
 
-locale: "en-us"
-defaultContentLanguage: "en"
+locale: "zh-CN"
+defaultContentLanguage: "zh"
+hasCJKLanguage: true
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -58,33 +59,36 @@ sitemap:
 menus:
   main:
     - identifier: posts
-      name: Posts
+      name: 文章
       url: /posts/
       weight: 10
     - identifier: archives
-      name: Archives
+      name: 归档
       url: /archives/
       weight: 20
     - identifier: tags
-      name: Tags
+      name: 标签
       url: /tags/
       weight: 30
     - identifier: search
-      name: Search
+      name: 搜索
       url: /search/
       weight: 40
     - identifier: about
-      name: About
+      name: 关于
       url: /about/
       weight: 50
 
 params:
   env: production
-  description: "Notes, experiments and things I build."
+  description: "软件、系统与一些实验的笔记。"
   author: "ycf"
 
   defaultTheme: auto
   disableThemeToggle: false
+
+  # 文章日期显示为中文格式
+  DateFormat: "2006年1月2日"
 
   ShowReadingTime: true
   ShowShareButtons: true
@@ -103,10 +107,8 @@ params:
 
   # Home page intro
   homeInfoParams:
-    Title: "Hi, I'm ycf 👋"
-    Content: >
-      A place for notes on software, systems and the occasional experiment.
-      New posts land here whenever something is worth writing down.
+    Title: "你好，我是 ycf 👋"
+    Content: "这里记录软件、系统，以及偶尔做的一些实验。有值得写下来的东西时，就会更新。"
 
   # Site icons (files live in static/)
   assets:
